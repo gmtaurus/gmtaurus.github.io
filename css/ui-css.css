@@ -1,0 +1,86 @@
+body{font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+  font-size: 14px;}
+a,a:hover{color: #f2b19d}
+.letterSpace-1-5{
+  letter-spacing: 1.5px;
+}
+.pink{
+	background-color: #f2b19d !important;
+}
+a.pink:hover{
+  background-color: #DB8D74 !important;
+}
+.orange{
+	background-color: #e7663c;
+}
+.text-white{
+	color:#fff !important;
+}
+.text-black{
+  color:#333 !important;
+}
+.text-32{
+  font-size: 1.5em;
+}
+.h25{
+	height:25px;
+}
+.h202{
+	height:202px;
+}
+.mb-0{
+	margin-bottom: 0px!important;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.pd-5{
+  padding:5px;
+}
+.pd-lr-0{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.nav-back{
+	background-color: #fff !important;
+	border: none !important;
+}
+.noborder{
+	border:none !important;
+}
+.scroll img{
+  overflow:hidden;width: 100%;height:400px !important;
+}
+.carousel-control.left{
+  background-image: none !important;
+}
+.carousel-control.right{
+  background-image: none !important;
+}
+.tool img{
+  width:115px;
+  height:115px;
+}
+.thumbnail img{
+  overflow: hidden;
+}
+
+/*二级页*/
+.top{
+  height:300px;
+}
+.backgd_my{
+  background-image:url(./img/bg.jpg);
+  background-size: cover;
+  height:300px;
+  padding-top:65px;
+  overflow: hidden;
+  filter:alpha(opacity=80);  
+  -moz-opacity:0.8;  
+  -khtml-opacity: 0.8;  
+  opacity: 0.8;
+}
+.photo{
+  height:100px;
+  width:100px;
+}
