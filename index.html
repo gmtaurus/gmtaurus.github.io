@@ -9,55 +9,12 @@
     <!-- bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- 自定义 -->
+    <link rel="stylesheet" type="text/css" href="css/ui-css.css">
     <!-- jquery -->
     <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
     <!-- bootstrap js -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <style type="text/css">
-    body{font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
-  font-size: 14px;}
-    	.pink{
-    		background-color: #f2b19d;
-    	}
-    	.orange{
-    		background-color: #e7663c;
-    	}
-    	.text-white{
-    		color:#fff !important;
-    	}
-    	.h25{
-    		height:25px;
-    	}
-    	.h202{
-    		height:202px;
-    	}
-    	.mb-0{
-    		margin-bottom: 0px!important;
-    	}
-      .mt-15{
-        margin-top: 15px;
-      }
-    	.pd-lr-0{
-    		padding-left: 0 !important;
-    		padding-right: 0 !important;
-    	}
-    	.nav-back{
-    		background-color: #fff !important;
-    		border: none !important;
-    	}
-    	.noborder{
-    		border:none !important;
-    	}
-      .scroll img{
-        overflow:hidden;width: 100%;height:300px !important;
-      }
-      .carousel-control.left{
-        background-image: none !important;
-      }
-      .carousel-control.right{
-        background-image: none !important;
-      }
-    </style>
   </head>
 
   <body>
@@ -86,36 +43,38 @@
   			</div>
   			<div class="col-sm-10 col-md-10">
         <div class="row">
-  				<!-- center-content -->
-  				<!-- <div class="scroll">
-  					<div class="showPic col-sm-12 col-md-12"><img src="img/a.jpg" style="overflow:hidden;" width="100%" height="300px;" /></div>
-  				</div> -->
           <div id="carousel-example-generic" class="carousel slide scroll" data-ride="carousel" style="padding-left:15px;padding-right:15px;">
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
               <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <a href="#"><img src="img/a.jpg" alt="说明"></a>
+                <a href="#"><img src="img/soho.jpg" alt="说明"></a>
                 <div class="carousel-caption">
-                  <h3>描述</h3>
-                  <p>图片描述...</p>
+                  <h3><a href="#" class="text-white"> 银河Soho</a></h3>
+                  <p>建筑风格依然新颖，深入其中，仿佛穿梭在音乐的旋律之中</p>
                 </div>
               </div>
               <div class="item">
-                <a href="#"><img src="img/a.jpg" alt="description2"></a>
+                <a href="#"><img src="img/soho2.jpg" alt="description2"></a>
                 <div class="carousel-caption">
-                  <h3>描述</h3>
-                  <p>图片描述</p>
+                  <h3><a href="#" class="text-white">银河Soho</a></h3>
                 </div>
               </div>
               <div class="item">
-                <a href="#"><img src="img/b.jpg" alt="description3"></a>
+                <a href="#"><img src="img/huyang.jpg" alt="description3"></a>
                 <div class="carousel-caption">
-                  <h3>描述</h3>
-                  <p>图片描述</p>
+                  <h3><a href="#" class="text-white">金色胡杨</a></h3>
+                  <p>大漠孤烟 美丽的宁夏川</p>
+                </div>
+              </div>
+              <div class="item">
+                <a href="#"><img src="img/autumn.jpg" alt="description4"></a>
+                <div class="carousel-caption">
+                  <h3><a href="#" class="text-white">金秋额济纳</a></h3>
                 </div>
               </div>
             </div>
@@ -129,19 +88,29 @@
             </a>
           </div>
   				<div class="three mt-15">
-  					<div class="col-sm-6 col-md-4">
+  					<div class="col-sm-4 col-md-4"><!-- 流结构 -->
 					    <div class="thumbnail">
+                <a href="htmlIndex.html"  target='_blank'><img src="img/html.png"></a>
 					      <div class="caption">
-					        <h3><a href="htmlIndex.html">HTML</a></h3>
+					        <h3><a href="htmlIndex.html"  target='_blank'>HTML</a></h3>
 					        <p>HTML 是什么？</p>
                   <p>HTML 指的是超文本标记语言 (Hyper Text Markup Language)
 HTML 不是一种编程语言，而是一种标记语言 (markup language)，用来描述网页的一种语言.</p>
-					        <p><a href="htmlIndex.html" class="btn btn-primary" role="button">更过 &gt;&gt;</a></p>
+					        <p><a href="htmlIndex.html"  target='_blank' class="btn btn-primary pink noborder" role="button">更过 &gt;&gt;</a></p>
 					      </div>
 					    </div>
+              <div class="thumbnail">
+                <div class="caption">
+                  <h3><a href="htmlIndex.html">文章一</a></h3>
+                  <p>HTML 指的是超文本标记语言 (Hyper Text Markup Language)
+HTML 不是一种编程语言，而是一种标记语言 (markup language)，用来描述网页的一种语言.</p>
+                  <p><a href="htmlIndex.html" class="btn btn-primary pink noborder" role="button">更过 &gt;&gt;</a></p>
+                </div>
+              </div>
 					  </div>
-					  <div class="col-sm-6 col-md-4">
+					  <div class="col-sm-4 col-md-4">
 					    <div class="thumbnail">
+                <a href="cssIndex.html"><img src="img/css.png"></a>
 					      <div class="caption">
 					        <h3><a href="cssIndex.html">CSS</a></h3>
 					        <p>CSS 概述</p>
@@ -149,54 +118,83 @@ HTML 不是一种编程语言，而是一种标记语言 (markup language)，用
                   样式定义如何显示 HTML 元素,
                   样式通常存储在样式表中,
                   解决内容与表现分离的问题.</p>
-					        <p><a href="cssIndex.html" class="btn btn-primary" role="button">更多 &gt;&gt;</a></p>
+					        <p><a href="cssIndex.html" class="btn btn-primary pink noborder" role="button">更多 &gt;&gt;</a></p>
 					      </div>
 					    </div>
+              <div class="thumbnail">
+                <div class="caption">
+                  <h3><a href="htmlIndex.html"  target='_blank'>文章一</a></h3>
+                  <p>HTML 指的是超文本标记语言 (Hyper Text Markup Language)
+HTML 不是一种编程语言，而是一种标记语言 (markup language)，用来描述网页的一种语言.</p>
+                  <p><a href="htmlIndex.html" class="btn btn-primary pink noborder" role="button">更过 &gt;&gt;</a></p>
+                </div>
+              </div>
+              <div class="thumbnail">
+                <div class="caption">
+                  <h3><a href="cssIndex.html">文章二</a></h3>
+                  <p>CSS 指层叠样式表 (Cascading Style Sheets),
+                  样式定义如何显示 HTML 元素,
+                  样式通常存储在样式表中,
+                  解决内容与表现分离的问题.</p>
+                  <p><a href="cssIndex.html" class="btn btn-primary pink noborder" role="button">更多 &gt;&gt;</a></p>
+                </div>
+              </div>
 					  </div>
-					  <div class="col-sm-6 col-md-4">
+					  <div class="col-sm-4 col-md-4">
 					    <div class="thumbnail">
+                <a href="cssIndex.html"><img src="img/js.png"></a>
 					      <div class="caption">
 					        <h3><a href="jsIndex.html">JS</a></h3>
 					        <p>JavaScript 脚本语言</p>
                   <p>JavaScript 是一种轻量级的编程语言,
                   可插入 HTML 页面的编程代码,由所有的现代浏览器执行.被用来改进设计,验证表单,检测浏览器,创建cookies,以及更多的应用.</p>
-					        <p><a href="jsIndex.html" class="btn btn-primary" role="button">更多 &gt;&gt;</a></p>
+					        <p><a href="jsIndex.html" class="btn btn-primary pink noborder" role="button">更多 &gt;&gt;</a></p>
 					      </div>
 					    </div>
+              <div class="thumbnail">
+                <a><img src="img/subex.png"></a>
+                <div class="caption">
+                  <h3><a href="http://www.tuicool.com/topics/10100104">Sublime 那些事儿</a></h3>
+                  <p><a class="text-black">Sublime Text 为不同的语言设置不同的缩进</a></p>
+                  <p><a class="text-black">全栈开发必备的 Sublime Text 插件</a></p>
+                  <p><a class="text-black">Mac下Sublime Text 3使用心得</a></p>
+                  <p><a href="http://www.tuicool.com/topics/10100104" class="btn btn-primary pink noborder" role="button">更多 &gt;&gt;</a></p>
+                </div>
+              </div>
 					  </div>
   				</div>
           </div>
           <div class="row">
   				<div class="usefullTool">
   					<div class="col-sm-6 col-md-3">
-					    <div class="thumbnail">
-					      <a><img data-src="holder.js/300x300" src="img/b.jpg"></a>
+					    <div class="thumbnail tool">
+					      <a href="http://www.sublimetext.com/"><img src="img/sublime.png"></a>
 					      <div class="caption">
-					        <a><h3>Tool1</h3></a>
+					        <a href="http://www.sublimetext.com/"><h3>Sublime 下载</h3></a>
+					      </div>
+					    </div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+					    <div class="thumbnail tool">
+					      <a href="http://www.google.cn/chrome/browser/desktop/index.html"><img src="img/chrome.png"></a>
+					      <div class="caption">
+					        <a href="http://www.google.cn/chrome/browser/desktop/index.html"><h3>chrome 下载</h3></a>
+					      </div>
+					    </div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+					    <div class="thumbnail tool">
+					      <a href="http://www.axure.org/axure/"><img src="img/axure.png"></a>
+					      <div class="caption">
+					        <a href="http://www.axure.org/axure/"><h3>Axure 下载</h3></a>
 					      </div>
 					    </div>
 					</div>
 					<div class="col-sm-6 col-md-3">
 					    <div class="thumbnail">
-					      <a><img data-src="holder.js/300x300" src="img/b.jpg"></a>
+					      <a href="https://color.adobe.com/zh/explore/newest/?time=all"><img src="img/adoveCC.png"></a>
 					      <div class="caption">
-					        <a><h3>Tool1</h3></a>
-					      </div>
-					    </div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-					    <div class="thumbnail">
-					      <a><img data-src="holder.js/300x300" src="img/b.jpg"></a>
-					      <div class="caption">
-					        <a><h3>Tool1</h3></a>
-					      </div>
-					    </div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-					    <div class="thumbnail">
-					      <a><img data-src="holder.js/300x300" src="img/b.jpg"></a>
-					      <div class="caption">
-					        <a><h3>Tool1</h3></a>
+					        <a href="https://color.adobe.com/zh/explore/newest/?time=all"><h3>Adobe Color CC</h3></a>
 					      </div>
 					    </div>
 					</div>
@@ -208,35 +206,33 @@ HTML 不是一种编程语言，而是一种标记语言 (markup language)，用
   			</div>
   		</div>
   		<div class="row">
-  			<div class="col-sm-1 col-md-1 pd-lr-0" style="padding-right:5px !important;">
+  			<!-- <div class="col-sm-1 col-md-1 pd-lr-0" style="padding-right:5px !important;">
   				<div class="pink h202 "></div>
-  			</div>
-  			<div class="col-sm-10 col-md-10 orange">
+  			</div> -->
+  			<div class="col-sm-12 col-md-12 pink">
   				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail orange noborder mb-0">
+				    <div class="thumbnail pink noborder mb-0">
 				      <div class="caption text-white">
 				        <h3>前端框架</h3>
-                <p><a class="text-white" href="#">BLEND(1月出)</a></p>
+                <p><a class="text-white" href="http://clouda.baidu.com/?qq-pf-to=pcqq.group">BLEND</a></p>
 				        <p><a class="text-white" href="http://www.bootcss.com/">Bootstrap</a></p>
-                <p><a class="text-white" href="http://zui.sexy/">ZUI</a></p>
-                <p><a class="text-white" href="http://www.bootcss.com/p/metro-ui-css/">METRO</a></p>
-                
+                <p><a class="text-white" href="http://zui.sexy/">ZUI</a></p> 
 				      </div>
 				    </div>
 				</div>
 				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail orange noborder mb-0">
+				    <div class="thumbnail pink noborder mb-0">
 				      <div class="caption text-white">
 				        <h3>图形</h3>
 				        <p><a class="text-white" href="http://fontawesome.io/">Font Awesome</a></p>
-                <p><a class="text-white" href="http://www.sublimetext.com/">sublime</a></p>
+                <p><a class="text-white" href="#">aaa</a></p>
                 <p><a class="text-white" href="https://color.adobe.com/zh/explore/newest/?time=all">配色</a></p>
-                <p><a class="text-white" href="http://logopond.com/">图形设计</a></p>
+               <!--  <p><a class="text-white" href="http://logopond.com/">图形设计</a></p> -->
 				      </div>
 				    </div>
 				</div>
 				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail orange noborder mb-0">
+				    <div class="thumbnail pink noborder mb-0">
 				      <div class="caption text-white">
 				        <h3>语言</h3>
 				        <p><a class="text-white" href="http://backbonejs.org/">backbone</a></p>
@@ -246,7 +242,7 @@ HTML 不是一种编程语言，而是一种标记语言 (markup language)，用
 				    </div>
 				</div>
 				<div class="col-sm-6 col-md-3">
-				    <div class="thumbnail orange noborder mb-0">
+				    <div class="thumbnail pink noborder mb-0">
 				      <div class="caption text-white">
 				        <h3>网站博客</h3>
 				        <p><a class="text-white" href="http://www.cnblogs.com/rubylouvre/">司徒正美</a></p>
@@ -256,9 +252,9 @@ HTML 不是一种编程语言，而是一种标记语言 (markup language)，用
 				    </div>
 				</div>
   			</div>
-  			<div class="col-sm-1 col-md-1 pd-lr-0" style="padding-left:5px !important;">
+  			<!-- <div class="col-sm-1 col-md-1 pd-lr-0" style="padding-left:5px !important;">
   				<div class="pink h202 "></div>
-  			</div>
+  			</div> -->
   		</div>
 
   	</div>
