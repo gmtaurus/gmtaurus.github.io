@@ -4,10 +4,24 @@ a,a:hover{color: #f2b19d}
 .letterSpace-1-5{
   letter-spacing: 1.5px;
 }
+.opacity{
+  filter:alpha(opacity=80);  
+  -moz-opacity:0.8;  
+  -khtml-opacity: 0.8;  
+  opacity: 0.8;
+}
+.radius{
+  -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+}
 .pink{
 	background-color: #f2b19d !important;
 }
 a.pink:hover{
+  background-color: #DB8D74 !important;
+}
+.thumbnail .pink:hover{
   background-color: #DB8D74 !important;
 }
 .orange{
