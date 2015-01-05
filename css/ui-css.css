@@ -27,6 +27,13 @@ a.pink:hover{
 .orange{
 	background-color: #e7663c;
 }
+.gray{
+  background-color: #f1f1f1;
+}
+
+.text-pink{
+  color:#f2b19d;
+}
 .text-white{
 	color:#fff !important;
 }
@@ -35,6 +42,9 @@ a.pink:hover{
 }
 .text-32{
   font-size: 1.5em;
+}
+.text-indent{
+  text-indent: 2em;
 }
 .h25{
 	height:25px;
@@ -61,6 +71,12 @@ a.pink:hover{
 }
 .noborder{
 	border:none !important;
+}
+.bd-gray{
+  border: 1px dotted #e1e1e1;
+}
+.bd{
+  border:1px solid;
 }
 .scroll img{
   overflow:hidden;width: 100%;height:400px !important;
