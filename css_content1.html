@@ -21,8 +21,8 @@
           <div class="row">
             <nav class="navbar navbar-default col-sm-12 col-md-12 mb-0 nav-back">
             <div class="nav-header">
-              <a href="#"><img src="img/catlogo.png"></a>
-              <a class="navbar-brand" href="#" style="float:none; font-size:2em">说说窝儿</a>
+              <a href="index.html"><img src="img/catlogo.png"></a>
+              <a class="navbar-brand" href="index.html" style="float:none; font-size:2em">说说窝儿</a>
             </div> 
             <div class="collpase navbar-collpase pull-right">
               <ul class="nav navbar-nav">
@@ -44,18 +44,231 @@
 
                 <div class="pull-left col-sm-2 col-md-2 text-center"><img class="img-circle photo" src="img/my.jpg"></div>
                 <div class="pull-right col-sm-10 col-md-10">
-                <h3>题目题目</h3>
-                 <div class="text-muted bd-gray pd-5 gray">发布时间：2015-01-05</div>
+                <h3>position之absolute、relative、fixed、static总结</h3>
+                 <div class="text-muted alert-warning pd-5" style="border:1px #faebcc solid;">发布时间：2015-01-05</div>
                  </div>
                 </div>
                 <!-- <div class="text-muted bd-gray pd-5 gray">发布时间：2015-01-05</div> -->
                 <div class="clearfix"></div>
-                <div class="pd-15 mt-15">
-                    <p class="text-indent pd-5">内容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦</p>
-                    <p class="text-indent pd-5">dfkasjfkdjskfld减肥的咖啡就快速的房价快速的</p>
-                    <div class="text-indent  alert-warning pd-5" style="border:1px #faebcc solid;">死的司法技术的的时间反馈的酸辣粉将诶大幅加快的酸辣粉将内容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦内容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦容内容内容啦啦啦啦</div>
+                <div class="pd-15 mt-15 text-indent">
+                    <p class=" pd-5 text-muted">引言：你想试一下导航栏固顶吗，想实现hover换过定位提示么，想完美控制组件的位置吗，那么你应该看一下css的position属性！</p>
+                    <p class=" pd-5">
+                      position属性的值：absolute,static,relative,fixed.
+                    </p>
+                    <!-- 考虑使用tab页 -->
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#absolute" role="tab" data-toggle="tab">absolute</a></li>
+                      <li role="presentation"><a href="#static" role="tab" data-toggle="tab">static</a></li>
+                      <li role="presentation"><a href="#relative" role="tab" data-toggle="tab">relative</a></li>
+                      <li role="presentation"><a href="#fixed" role="tab" data-toggle="tab">fixed</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="absolute">
+                        <p class="pd-5"><h4>position之absolute</h4></p>
+                    <p class="alert-warning pd-5 bd-orange">
+                      <span>.demo{
+                        position:absolute;
+                        top:0px;
+                        left:0px;
+                      }</span>
+                    </p>
+                    <p class="pd-5"><span>absolute,绝对定位，相对于第一个position设置不是static的父元素，通过top和left进行定位。</span></p>
+                    <div class="group clearfix">
+                    <div class="col-md-7 alert-warning pd-5 bd-orange text-left">
+                      <span>不设置position属性：</span>
+                      <textarea>
+<div class="parent" style="background: #BFA556">
+  <div class="childOne" style="width:400px; height:400px; background: #A76B4E"></div>
+  <div class="childTwo" style="width:200px;height:200px;background: #F2674F"></div>
+</div>
+                      </textarea>
+                    </div>
+                    <div class="col-md-5  pd-5">
+                      <h5 class="col-xs-4 col-sm-4">显示效果：</h5>
+                      <div class="parent col-xs-8 col-sm-8" style="background: #BFA556">
+                        <div class="childOne" style="width:100px; height:100px; background: #A76B4E">childOne</div>
+                        <div class="childTwo" style="width:50px;height:50px;background: #F2674F">childTwo</div>
+                        parent
+                      </div>
+                    </div>
+                    </div>
+                   <div class="group clearfix mt-15">
+                    <div class="col-md-7 alert-warning pd-5 bd-orange text-left">
+                      <span>设置position属性,用top和left进行定位：</span>
+                      <textarea>
+<div class="parent" style="background: #BFA556">
+  <div class="childOne" style="width:400px; height:400px; background: #A76B4E"></div>
+  <div class="childTwo" style="width:200px;height:200px;background: #F2674F;position:absolute; top:20px; left:20px;"></div>
+</div>
+                      </textarea>
+                      <span>childTwo 相对于其父元素parent 偏移，top:20px,left:20px;</span>
+                    </div>
+                    <div class="col-md-5  pd-5">
+                      <h5 class="col-xs-4 col-sm-4">显示效果：</h5>
+                      <div class="parent col-xs-8 col-sm-8" style="background: #BFA556">
+                        <div class="childOne" style="width:100px; height:100px; background: #A76B4E">childOne</div>
+                        <div class="childTwo" style="width:50px;height:50px;background: #F2674F;position:absolute;top:20px;left:20px;">childTwo</div>
+                        parent
+                      </div>
+                    </div>
+                    </div>
+                    <p></p>
+                    <p>
+                      position 的absolute 属性，常用的场景，如：相对于<b style="text-decoration:underline;background-color:#A76B4E">页面</b>固定位置的div或其他element。
+                    </p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="static">
+                        <p class="pd-5"><h4>position之static</h4></p>
+                    <p class="alert-warning pd-5 bd-orange">
+                      <span>.demo{
+                        position:absolute;
+                        top:0px;
+                        left:0px;
+                      }</span>
+                    </p>
+                    <p class="pd-5"><span>static,默认值。没有定位，元素出现在正常的流中。</span></p>
+                    <div class="group clearfix">
+                    <div class="col-md-7 alert-warning pd-5 bd-orange text-left">
+                      <span>注意，position设为static的element不能作为position-absolute 孩子的参考对象！</span>
+                      <p>为parent设置float:right 属性,是之更直观，可以明显看到，childTwo是相对于preParent进行定位的！</p>
+                      <textarea>
+<div class="preParent" style="background: #918C4E;overflow:hidden;">
+  <div class="parent clearfix" style="background: #BFA556;position:static;float:right;">
+    <div class="childOne" style="width:400px; height:400px; background: #A76B4E"></div>
+    <div class="childTwo" style="width:200px;height:200px;background: #F2674F;position:absolute;top:20px;left:20px;"></div>
+  </div>
+</div>
+                      </textarea>
+                    </div>
+                    <div class="col-md-5  pd-5 clearfix">
+                      <div class="preParent" style="background: #918C4E;overflow:hidden;">
+                        <div class="parent col-xs-8 col-sm-8 clearfix" style="background: #BFA556;position:static;float:right;">
+                          <div class="childOne" style="width:100px; height:100px; background: #A76B4E">childOne</div>
+                          <div class="childTwo" style="width:50px;height:50px;background: #F2674F;position:absolute;top:20px;left:20px;">childTwo</div>
+                          parent
+                        </div>
+                        preParent
+                      </div>
+                    </div>
+                    </div>
+                    <p></p>
+                    <p><span>childTwo 没有相对于parent偏移，而是相对于父元素preParent,原因就是因为，parent设置position static，不能作为拥有absolute绝对定位子元素的偏移依据！</span></p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="relative">
+                        <!-- <p class="pd-5"><h4>position之absolute</h4></p>
+                    <p class="alert-warning pd-5 bd-orange">
+                      <span>.demo{
+                        position:absolute;
+                        top:0px;
+                        left:0px;
+                      }</span>
+                    </p>
+                    <p class="pd-5"><span>absolute,绝对定位，相对于第一个position设置不是static的父元素，通过top和left进行定位。</span></p>
+                    <div class="group clearfix">
+                    <div class="col-md-7 alert-warning pd-5 bd-orange text-left">
+                      <span>不设置position属性：</span>
+                      <textarea>
+<div class="parent" style="background: #BFA556">
+  <div class="childOne" style="width:400px; height:400px; background: #A76B4E"></div>
+  <div class="childTwo" style="width:200px;height:200px;background: #F2674F"></div>
+</div>
+                      </textarea>
+                    </div>
+                    <div class="col-md-5  pd-5">
+                      <h5 class="col-xs-4 col-sm-4">显示效果：</h5>
+                      <div class="parent col-xs-8 col-sm-8" style="background: #BFA556">
+                        <div class="childOne" style="width:100px; height:100px; background: #A76B4E">childOne</div>
+                        <div class="childTwo" style="width:50px;height:50px;background: #F2674F">childTwo</div>
+                        parent
+                      </div>
+                    </div>
+                    </div>
+                   <div class="group clearfix mt-15">
+                    <div class="col-md-7 alert-warning pd-5 bd-orange text-left">
+                      <span>设置position属性,用top和left进行定位：</span>
+                      <textarea>
+<div class="parent" style="background: #BFA556">
+  <div class="childOne" style="width:400px; height:400px; background: #A76B4E"></div>
+  <div class="childTwo" style="width:200px;height:200px;background: #F2674F;position:absolute; top:20px; left:20px;"></div>
+</div>
+                      </textarea>
+                      <span>childTwo 相对于其父元素parent 偏移，top:20px,left:20px;</span>
+                    </div>
+                    <div class="col-md-5  pd-5">
+                      <h5 class="col-xs-4 col-sm-4">显示效果：</h5>
+                      <div class="parent col-xs-8 col-sm-8" style="background: #BFA556">
+                        <div class="childOne" style="width:100px; height:100px; background: #A76B4E">childOne</div>
+                        <div class="childTwo" style="width:50px;height:50px;background: #F2674F;position:absolute;top:20px;left:20px;">childTwo</div>
+                        parent
+                      </div>
+                    </div>
+                    </div>
+                    <p>
+                      position 的absolute 属性，常用的场景，如：相对于<b>页面</b>固定位置的div及其他element。如下展示：
+                    </p>
+                    <div></div> -->
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="fixed">
+                      <!-- <p class="pd-5"><h4>position之absolute</h4></p>
+                    <p class="alert-warning pd-5 bd-orange">
+                      <span>.demo{
+                        position:absolute;
+                        top:0px;
+                        left:0px;
+                      }</span>
+                    </p>
+                    <p class="pd-5"><span>absolute,绝对定位，相对于第一个position设置不是static的父元素，通过top和left进行定位。</span></p>
+                    <div class="group clearfix">
+                    <div class="col-md-7 alert-warning pd-5 bd-orange text-left">
+                      <span>不设置position属性：</span>
+                      <textarea>
+<div class="parent" style="background: #BFA556">
+  <div class="childOne" style="width:400px; height:400px; background: #A76B4E"></div>
+  <div class="childTwo" style="width:200px;height:200px;background: #F2674F"></div>
+</div>
+                      </textarea>
+                    </div>
+                    <div class="col-md-5  pd-5">
+                      <h5 class="col-xs-4 col-sm-4">显示效果：</h5>
+                      <div class="parent col-xs-8 col-sm-8" style="background: #BFA556">
+                        <div class="childOne" style="width:100px; height:100px; background: #A76B4E">childOne</div>
+                        <div class="childTwo" style="width:50px;height:50px;background: #F2674F">childTwo</div>
+                        parent
+                      </div>
+                    </div>
+                    </div>
+                   <div class="group clearfix mt-15">
+                    <div class="col-md-7 alert-warning pd-5 bd-orange text-left">
+                      <span>设置position属性,用top和left进行定位：</span>
+                      <textarea>
+<div class="parent" style="background: #BFA556">
+  <div class="childOne" style="width:400px; height:400px; background: #A76B4E"></div>
+  <div class="childTwo" style="width:200px;height:200px;background: #F2674F;position:absolute; top:20px; left:20px;"></div>
+</div>
+                      </textarea>
+                      <span>childTwo 相对于其父元素parent 偏移，top:20px,left:20px;</span>
+                    </div>
+                    <div class="col-md-5  pd-5">
+                      <h5 class="col-xs-4 col-sm-4">显示效果：</h5>
+                      <div class="parent col-xs-8 col-sm-8" style="background: #BFA556">
+                        <div class="childOne" style="width:100px; height:100px; background: #A76B4E">childOne</div>
+                        <div class="childTwo" style="width:50px;height:50px;background: #F2674F;position:absolute;top:20px;left:20px;">childTwo</div>
+                        parent
+                      </div>
+                    </div>
+                    </div>
+                    <p>
+                      position 的absolute 属性，常用的场景，如：相对于<b>页面</b>固定位置的div及其他element。如下展示：
+                    </p>
+                    <div></div> -->
+                    </div>
+                    </div>
                 </div>
             </div>
           </div>
+          
   </body>
   </html>

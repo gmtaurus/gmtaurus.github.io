@@ -1,6 +1,9 @@
 body{font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
   font-size: 14px;}
 a,a:hover{color: #f2b19d}
+.group textarea{
+  overflow:scroll; height:150px;width:600px;" disabled="disabled
+}
 .letterSpace-1-5{
   letter-spacing: 1.5px;
 }
@@ -80,6 +83,9 @@ a.pink:hover{
 }
 .bd{
   border:1px solid;
+}
+.bd-orange{
+  border:1px #faebcc solid;
 }
 .scroll img{
   overflow:hidden;width: 100%;height:400px !important;
